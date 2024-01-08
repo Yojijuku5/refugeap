@@ -1,4 +1,4 @@
-# Live Website can be found here:
+# Live Website (CURRENTLY DOWN) can be found here:
 
 Live Website: https://refugeap.vercel.app.
 
@@ -28,4 +28,6 @@ npm run dev
 
 after that you should be able to open the project at the url http://localhost:3000/
 
-Commits made under the name charlesmadu or email :100036347+charlesmadu@users.noreply.github.com belong to Charles Madu.
+## Note that images of real people have been removed for privacy reasons.
+
+Info about RefugEAP can be found here: https://le.ac.uk/cite/sanctuary-seekers-unit/initiatives/refugeap
