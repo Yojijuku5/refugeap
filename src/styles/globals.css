@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-neutral-100;
+  }
+}
+
+@layer components {
+  .button,
+  .button-primary,
+  .button-remove {
+    @apply relative rounded-lg border border-white/20 px-5 py-2 capitalize duration-300;
+  }
+
+  .button-primary {
+    @apply bg-emerald-700 text-white hover:bg-emerald-600;
+  }
+
+  .button-remove {
+    @apply bg-red-700 text-white hover:bg-red-600;
+  }
+
+  .button {
+    @apply bg-neutral-300 text-neutral-900 hover:bg-neutral-200;
+  }
+
+  .button-add {
+    @apply sticky bottom-5 left-[calc(100vw-(100vw-80rem)*0.5-5rem)] mb-5 mr-5 flex aspect-square h-12 items-center justify-center rounded-full border border-black bg-white/30 text-2xl text-black backdrop-blur-sm duration-300 hover:scale-105;
+  }
+
+  mark.highlight,
+  mark.highlight-primary {
+    @apply relative isolate bg-transparent font-bold capitalize text-current after:absolute after:-left-2 after:-right-2 after:bottom-2 after:-z-10 after:h-4 after:bg-yellow-500/50 after:content-[''];
+  }
+
+  mark.highlight-primary {
+    @apply text-emerald-700;
+  }
+
+  .card {
+    @apply relative overflow-hidden rounded-md border border-neutral-300 bg-neutral-200 shadow-md duration-300 @container hover:scale-[1.01] hover:border-neutral-400 hover:shadow-lg;
+  }
+}
+
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded-md bg-neutral-400;
+}
